@@ -1,0 +1,25 @@
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h>
+
+//LiquidCrystal_I2C lcd(0x3F,20,4);	// บางรุ่นใช้ mac นี้ หรือลองใช้ mac address scan ดู
+LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 for a 16 chars and 2 line display
+
+void setup()
+{
+  lcd.init();                      // initialize the lcd 
+  // Print a message to the LCD.
+  lcd.backlight();
+  lcd.setCursor(0,0);
+  lcd.print("Temp: 30degC");
+  lcd.setCursor(0,1);
+  lcd.print("Curr: 0.5A");
+  lcd.setCursor(0,2);
+  lcd.print("Volt: 114v");
+  lcd.setCursor(0,3);
+  lcd.print(".");
+}
+
+
+void loop()
+{
+}
