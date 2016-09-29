@@ -1,0 +1,7 @@
+
+I2C device found at address 0x57  <-- EEPROM
+I2C device found at address 0x68  <-- Real Time Clock DS3231
+
+I2C device found at address 0x27  <-- LCD Desplay IIC 20x4
+I2C device found at address 0x3F  <-- LCD Desplay IIC 20x4
+
